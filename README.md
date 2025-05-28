@@ -1,1 +1,1 @@
-# Miner-aDeDatos_ProyectoFinal_Dengue
+# MineríaDeDatos_ProyectoFinal_Dengue
