@@ -163,6 +163,7 @@ import streamlit as st
 
 st.title('Predicción de Clasifiación final de dengue')
 
+pac_hos_ = st.selectbox('pac_hos_', ['1', '2'])
 desplazami = st.selectbox('desplazami', ['1', '2'])
 dolrretroo = st.selectbox('dolrretroo', ['1', '2'])
 artralgia = st.selectbox('artralgia', ['1', '2'])
@@ -178,8 +179,8 @@ daño_organ = st.selectbox('daño_organ', ['1', '2'])
 
 
 #Dataframe
-datos = [[desplazami, dolrretroo, artralgia, erupcionr, dolor_abdo, vomito, diarrea, caida_plaq, extravasac, hemorr_hem, choque, daño_organ]]
-data = pd.DataFrame(datos, columns=['desplazami', 'dolrretroo','artralgia','erupcionr','dolor_abdo', 'vomito', 'diarrea', 'caida_plaq', 'extravasac', 'hemorr_hem', 'choque', 'daño_organ'])
+datos = [[pac_hos_, desplazami, dolrretroo, artralgia, erupcionr, dolor_abdo, vomito, diarrea, caida_plaq, extravasac, hemorr_hem, choque, daño_organ]]
+data = pd.DataFrame(datos, columns=['pac_hos_', 'desplazami', 'dolrretroo','artralgia','erupcionr','dolor_abdo', 'vomito', 'diarrea', 'caida_plaq', 'extravasac', 'hemorr_hem', 'choque', 'daño_organ'])
 
 #Hacemos la predicción con el modelo SVM
 Y_SVM = pipeline.predict(data)
