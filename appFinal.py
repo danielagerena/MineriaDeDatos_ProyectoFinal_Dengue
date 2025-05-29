@@ -37,7 +37,7 @@ def aplicar_reglas_calidad(df):
     # 11. Variables binarias
     # ----------------------------
     vars_binarias = [
-        'desplazami', 'dolrretroo','artralgia', 'erupcionr',
+        'pac_hos_', 'desplazami', 'dolrretroo','artralgia', 'erupcionr',
         'dolor_abdo', 'vomito', 'diarrea', 'caida_plaq',
         'extravasac', 'hemorr_hem', 'choque', 'daño_organ'
     ]
