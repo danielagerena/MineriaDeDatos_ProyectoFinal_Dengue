@@ -182,7 +182,7 @@ datos = [[desplazami, dolrretroo, artralgia, erupcionr, dolor_abdo, vomito, diar
 data = pd.DataFrame(datos, columns=['desplazami', 'dolrretroo','artralgia','erupcionr','dolor_abdo', 'vomito', 'diarrea', 'caida_plaq', 'extravasac', 'hemorr_hem', 'choque', 'daño_organ'])
 
 #Hacemos la predicción con el modelo SVM
-Y_SVM = pipeline.predict(df)
+Y_SVM = pipeline.predict(data)
 print(Y_SVM)
 
 df['Prediccion']=Y_SVM
