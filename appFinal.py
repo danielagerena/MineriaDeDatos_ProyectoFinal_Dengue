@@ -182,6 +182,9 @@ daño_organ = st.selectbox('daño_organ', ['1', '2'])
 datos = [[pac_hos_, desplazami, dolrretroo, artralgia, erupcionr, dolor_abdo, vomito, diarrea, caida_plaq, extravasac, hemorr_hem, choque, daño_organ]]
 data = pd.DataFrame(datos, columns=['pac_hos_', 'desplazami', 'dolrretroo','artralgia','erupcionr','dolor_abdo', 'vomito', 'diarrea', 'caida_plaq', 'extravasac', 'hemorr_hem', 'choque', 'daño_organ'])
 
+for col in data.columns:
+    data[col] = labelencoder.fit_transform(data[col])
+
 #Hacemos la predicción con el modelo SVM
 Y_SVM = pipeline.predict(data)
 print(Y_SVM)
