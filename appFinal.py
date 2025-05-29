@@ -161,7 +161,7 @@ pipeline = pickle.load(open(filename, 'rb'))
 
 import streamlit as st
 
-st.title('Predicción de inversión en una tienda de videojuegos')
+st.title('Predicción de Clasifiación final de dengue')
 
 desplazami = st.selectbox('desplazami', ['1', '2'])
 dolrretroo = st.selectbox('dolrretroo', ['1', '2'])
