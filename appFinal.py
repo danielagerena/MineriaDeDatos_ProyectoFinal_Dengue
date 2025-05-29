@@ -151,7 +151,7 @@ def aplicar_reglas_calidad(df):
 
 #Cargamos el pipeline con el modelo
 import pickle
-filename = 'pipeline_modelo (1).pkl'
+filename = 'pipeline_modelo (3).pkl'
 pipeline = pickle.load(open(filename, 'rb'))
 #pipeline
 
