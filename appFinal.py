@@ -159,8 +159,6 @@ pipeline = pickle.load(open(filename, 'rb'))
 # df = pd.read_excel('/content/datosfuturos_limpio.xlsx')
 # df
 
-df.info()
-
 import streamlit as st
 
 st.title('Predicción de inversión en una tienda de videojuegos')
